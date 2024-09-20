@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage with Multimedia & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        header, nav, section, article, footer {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Semantic Elements -->
+    <header>
+        <h1>Welcome to Our Sample Webpage</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <article>
+            <h2>Introduction</h2>
+            <p>Use of semantic elements and multimedia integration</p>
+        </article>
+        
+        <!-- Multimedia Integration -->
+       
+            <h2>Embedded Video</h2>
+            <video width="600" controls>
+                <source src="Videos/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+
+      
+            <h2>Embedded Audio</h2>
+            <audio controls>
+                <source src="Audios/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+    </section>
+<section>
+    
+<h2>Embedded External Webpage</h2>
+<iframe src="index.html" frameborder="1" width="200" height="200" id="ouriframe" name="" title="External Page"></iframe>
+<a href="" target="ouriframe">Switch to new Document</a>
+
+</section>
+    <!-- User Information Form -->
+   
+        <h2>Sign-Up Form</h2>
+        <form action="" method="">
+            <fieldset>
+                <!-- <legend>Personal Information</legend> -->
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+ 
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sample Website. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
